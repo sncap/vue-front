@@ -1,24 +1,21 @@
 <template>
   <v-app>
-    <sample />
+    <v-main>
+      <router-view/>
+    </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-import Sample from "@/views/Sample.vue";
+import { defineComponent } from 'vue'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'App',
 
-  components: {
-    HelloWorld,
-    Sample,
+  data () {
+    return {
+      //
+    }
   },
-
-  data: () => ({
-    //
-  }),
-});
+})
 </script>
